@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table heading cell Spanning table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            
+            width: 100%;
+        }
+        td {
+            border: 5px solid rgb(88, 74, 74);
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            border: 5px solid rgb(88, 74, 74);
+            padding: 8px;
+            text-align: center;
+        }
+        .gray-cell {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">Table Heading cell Spanning table</th>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            <td colspan="2">Spanning 2 Columns</td>
+            <td>Normal cell</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="gray-cell">Cell Spanning 3 Rows with a gray (US spelling Background)</td>
+            <td>Normal cell</td>
+            <td>Normal cell</td>
+            <td>Normal cell</td>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            <td rowspan="2" colspan="2">Cell spanning 2 rows and 2 columns</td>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
